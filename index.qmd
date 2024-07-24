@@ -21,6 +21,8 @@ Press the `` ` `` backtick key to open the console.
 
 ```{R}
 #| eval: false
+#| echo: true
+
 library(ggplot2)
 ggplot(mtcars, aes(hp, mpg)) +
 geom_point() +
