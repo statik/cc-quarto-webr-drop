@@ -20,7 +20,7 @@ embed a drop-down R or Python wasm console into your presentation!
 Press the `` ` `` backtick key to open the console.
 
 ```{R}
-#| eval: false
+#| eval: true
 #| echo: true
 
 library(ggplot2)
