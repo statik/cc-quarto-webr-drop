@@ -1,0 +1,28 @@
+---
+title: "webr-drop"
+format:
+  revealjs:
+    drop:
+      engine: webr
+      webr:
+        packages:
+          - ggplot2
+          - dplyr
+revealjs-plugins:
+  - drop
+---
+
+## Quarto webr-drop
+
+The [Quarto webr-drop extension](https://github.com/r-wasm/quarto-drop) enables you to
+embed a drop-down R or Python wasm console into your presentation!
+
+Press the `` ` `` backtick key to open the console.
+
+```{R}
+#| echo: true
+library(ggplot2)
+ggplot(mtcars, aes(hp, mpg)) +
+geom_point() +
+geom_smooth(formula = y ~ x, method = "loess")
+```
